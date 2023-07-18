@@ -1,0 +1,28 @@
+# To copy all the data fules to its own location, following  Hive_style pattern:
+
+aws s3 cp CAvideos.csv s3://bigdata-on-youtube-raw-useast1-274614244619-dev/youtube/raw_statistics/region=ca/
+aws s3 cp DEvideos.csv s3://bigdata-on-youtube-raw-useast1-274614244619-dev/youtube/raw_statistics/region=de/
+aws s3 cp FRvideos.csv s3://bigdata-on-youtube-raw-useast1-274614244619-dev/youtube/raw_statistics/region=fr/
+aws s3 cp GBvideos.csv s3://bigdata-on-youtube-raw-useast1-274614244619-dev/youtube/raw_statistics/region=gb/
+aws s3 cp INvideos.csv s3://bigdata-on-youtube-raw-useast1-274614244619-dev/youtube/raw_statistics/region=in/
+aws s3 cp JPvideos.csv s3://bigdata-on-youtube-raw-useast1-274614244619-dev/youtube/raw_statistics/region=jp/
+aws s3 cp KRvideos.csv s3://bigdata-on-youtube-raw-useast1-274614244619-dev/youtube/raw_statistics/region=kr/
+aws s3 cp MXvideos.csv s3://bigdata-on-youtube-raw-useast1-274614244619-dev/youtube/raw_statistics/region=mx/
+aws s3 cp RUvideos.csv s3://bigdata-on-youtube-raw-useast1-274614244619-dev/youtube/raw_statistics/region=ru/
+aws s3 cp USvideos.csv s3://bigdata-on-youtube-raw-useast1-274614244619-dev/youtube/raw_statistics/region=us/
+
+# To copy all JSON files Reference data to same location
+
+
+aws s3 cp . s3://bigdata-on-youtube-raw-useast1-274614244619-dev/youtube/raw_statistics_reference_data/ --recursive --exclude "*" --include '*.json'
+
+# BEST PRATCISE naming convensions
+
+-> bigdata-on-youtube-glue-policy-01
+-> bigdata-on-youtube-glue-service-role-01
+-> bigdata-on-youtube-glue-crawler-01
+
+NOTES:
+
+- roles 2 services
+- policies 2 groups 2 users
