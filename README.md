@@ -51,3 +51,4 @@ also included in the JSON file linked to the region.
 
 ## Architecture diagram:
 
+[architecture diagram of project](https://github.com/aiwithqasim/Building-Modern-Data-Architecture-Pipeline-using-Python-AWS-/blob/dev/docs%20%26%20architecture/Architecture.jpg)
